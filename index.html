@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ed">
+    <meta name="description" content="Des guides simples et pratiques pour mieux utiliser le numérique, protéger ses données et gagner du temps au quotidien.">
+    <title>Déclic — Le numérique, simplement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Déclic, accueil">
+        <span class="brand-mark" aria-hidden="true">d.</span>
+        <span>déclic<span class="brand-period">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a class="nav-link active" href="#guides">Les guides</a>
+        <a class="nav-link" href="#parcours">Parcours</a>
+        <a class="nav-link" href="#apropos">À propos</a>
+        <button class="saved-nav" id="saved-toggle" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.75A1.75 1.75 0 0 1 7.75 3h8.5A1.75 1.75 0 0 1 18 4.75V21l-6-4-6 4V4.75Z"/></svg>
+          <span>Mes favoris</span><span class="saved-count" id="saved-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Le guide qui va droit au but</p>
+          <h1 id="hero-title">Le numérique,<br><span>en plus simple.</span></h1>
+          <p class="hero-description">Des réponses claires, des conseils utiles et zéro jargon. Pour avancer à votre rythme, un clic après l’autre.</p>
+          <form class="search-form" id="search-form" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+            <label class="visually-hidden" for="guide-search">Que souhaitez-vous apprendre ?</label>
+            <input id="guide-search" type="search" placeholder="Ex. protéger mes comptes, envoyer une photo…" autocomplete="off">
+            <button type="submit" aria-label="Rechercher">↗</button>
+          </form>
+          <p class="search-hint">À découvrir : <button type="button" class="suggestion" data-query="mot de passe">mot de passe</button>, <button type="button" class="suggestion" data-query="arnaque">arnaques</button>, <button type="button" class="suggestion" data-query="photo">photos</button></p>
+        </div>
+        <div class="hero-art" aria-label="Illustration d’un guide pratique" role="img">
+          <div class="art-sun"></div>
+          <div class="art-card art-card-back">
+            <div class="art-card-top"><span class="art-mini-mark">d.</span><span>VOTRE MÉMO</span></div>
+            <div class="art-check"><span>✓</span><i></i></div>
+            <div class="art-check"><span>✓</span><i></i></div>
+            <div class="art-check"><span>✓</span><i></i></div>
+          </div>
+          <div class="art-card art-card-front">
+            <div class="art-label">LE PETIT GUIDE</div>
+            <div class="art-shield"><svg viewBox="0 0 60 66" aria-hidden="true"><path d="M30 4 51 12v16c0 14-9 25-21 32C18 53 9 42 9 28V12L30 4Z"/><path class="shield-check" d="m21 32 6 6 13-14"/></svg></div>
+            <h2>Un clic<br>plus serein.</h2>
+            <p>Internet, à votre façon.</p>
+          </div>
+          <span class="art-spark spark-one" aria-hidden="true">✳</span>
+          <span class="art-spark spark-two" aria-hidden="true">✳</span>
+          <span class="art-caption">ON Y VA TRANQUILLEMENT <span>↗</span></span>
+        </div>
+        <a class="scroll-cue" href="#guides" aria-label="Découvrir les guides"><span></span> FAITES DÉFILER</a>
+      </section>
+
+      <section class="guide-section" id="guides" aria-labelledby="guides-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow"><span class="eyebrow-dot"></span> À chacun son déclic</p>
+            <h2 id="guides-title">Par où commencer<span class="title-dot"> ?</span></h2>
+          </div>
+          <p class="section-intro">Des petits pas, de vraies réponses. Choisissez un sujet et c’est parti.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filtrer les guides par thème">
+          <button class="filter-chip selected" type="button" data-category="Tout" aria-pressed="true">Tout voir <span>08</span></button>
+          <button class="filter-chip" type="button" data-category="Sécurité" aria-pressed="false">Sécurité</button>
+          <button class="filter-chip" type="button" data-category="Au quotidien" aria-pressed="false">Au quotidien</button>
+          <button class="filter-chip" type="button" data-category="Outils" aria-pressed="false">Outils</button>
+        </div>
+        <div class="results-meta" id="results-meta" aria-live="polite"></div>
+        <div class="guide-grid" id="guide-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>Pas de guide trouvé pour le moment.</h3>
+          <p>Essayez un autre mot ou choisissez un thème.</p>
+          <button class="text-button" id="reset-filters" type="button">Voir tous les guides ↗</button>
+        </div>
+      </section>
+
+      <section class="path-section" id="parcours" aria-labelledby="path-title">
+        <div class="path-stamp" aria-hidden="true"><span>À VOTRE</span><strong>RYTHME</strong><span>ET SANS PRESSION</span></div>
+        <div class="path-content">
+          <p class="eyebrow path-eyebrow"><span class="eyebrow-dot"></span> Un premier pas à la fois</p>
+          <h2 id="path-title">Pas besoin de tout<br>comprendre. Juste de<br><em>commencer quelque part.</em></h2>
+          <p>Nos guides sont pensés pour être lus tranquillement, sur votre téléphone comme sur votre ordinateur. Pas de prérequis, juste des explications qui font sens.</p>
+          <a class="path-link" href="#guides">Trouver mon premier guide <span>↗</span></a>
+        </div>
+        <div class="path-aside" aria-hidden="true">
+          <div class="path-line"></div>
+          <div class="path-step"><span class="step-number">01</span><span class="step-icon">⌕</span><span>Je trouve<br>mon sujet</span></div>
+          <div class="path-step"><span class="step-number">02</span><span class="step-icon">↗</span><span>Je suis les<br>étapes simples</span></div>
+          <div class="path-step"><span class="step-number">03</span><span class="step-icon">✳</span><span>Je me sens<br>plus à l’aise</span></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="apropos" aria-labelledby="about-title">
+        <div class="about-icon" aria-hidden="true">d.</div>
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Notre idée est simple</p>
+          <h2 id="about-title">Le numérique est pour tout le monde.</h2>
+          <p>Déclic vous aide à trouver des réponses pratiques, sans vous faire sentir que vous auriez déjà dû savoir. Prenez ce qui vous est utile, le reste peut attendre.</p>
+        </div>
+        <a class="about-link" href="#guides" aria-label="Retourner aux guides">↗</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Déclic, accueil"><span class="brand-mark" aria-hidden="true">d.</span><span>déclic<span class="brand-period">.</span></span></a>
+      <p>Fait avec soin. À lire à votre rythme.</p>
+      <span class="footer-note">LE NUMÉRIQUE, EN PLUS SIMPLE <span>© 2026</span></span>
+    </footer>
+
+    <dialog class="guide-dialog" id="guide-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Fermer le guide">×</button>
+      <div class="dialog-content" id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>
