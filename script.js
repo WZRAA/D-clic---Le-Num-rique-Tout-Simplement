@@ -1,4 +1,106 @@
 const guides = [
+    {
+    id: "utiliser-franceconnect",
+    category: "Au quotidien",
+    title: "Se connecter au service publics avec FranceConnect.",
+    description: "Utiliser un seul identifiant pour accéder aux impôts, à la santé et à la retraite.",
+    icon: "🔑",
+    duration: "5 min",
+    keywords: "franceconnect impots ameli retraite identifant administration démarche",
+    lead: "FranceConnect est un service officiel qui évite d'avoir à créer et retenir un mot de passe différent pour chaque administration.",
+    steps: [
+      "Sur le site administratif de votre choix (Ameli, Impôts, Assurance retraite...), cliquez sur le bouton bleu « S'identifier avec FranceConnect ».",
+      "Choisissez un compte que vous utilisez déjà et dont vous connaissez le mot de passe (par exemple votre compte Impôts).",
+      "Entrez l'identifiant et le mot de passe de ce compte pour vous connecter",
+      "Vous êtes automatiquement redirigé et connecté sur le site administratif que vous voulez consulter"
+    ],
+    tip: "Par sécurité, vous recevrez un mail de confirmation à chaque fois que vous utilisez FranceConnect."
+  },
+  {
+    id: "reconnaitre-faux-sites",
+    category: "Sécurité",
+    title: "Éviter les faux sites et les arnaques en ligne",
+    description: "Les réflexes simples pour vérifier un site et ne pas se faire piéger.",
+    icon: "🛡️",
+    duration: "5 min",
+    keywords: "arnaque faux site fraude cadenas adresse web",
+    lead: "Sur internet, des sites frauduleux copient parfois l'apparence d'un site officiel pour vous tromper et vous voler vos informations.",
+    steps: [
+      "Lors d\"une recherche, ignorez les premiers résultats marqués « Annonce » ou « Sponsorisé » ou « Annonce » en petit." ,
+      "Regardez attentivement l'adresse tout en haut du navigateur : un site officiel commence par https et affiche un cadenas fermé.",
+      "Vérifiez qu'il n'y a pas de faute d'orthographe bizarre dans le nom du site (exemple : amelli.fr au lieu de ameli.fr).",
+      "En cas de doute sur un site, tapez son nom suivi du mot « Avis » dans votre moteur de recherche."
+    ],
+    tip: "Enregistrez vos sites importants (impôts, banque, santé...) dans vos favoris pour ne plus jamais avoir à les chercher."
+  },
+   {
+    id: "mises-a-jour-ordinateur",
+    category: "Sécurité",
+    title: "Faire les mises à jour sans crainte",
+    description: "Comprendre pourquoi votre appareil demande à redémarrer et quand le faire.",
+    icon: "🔄",
+    duration: "4 min",
+    keywords: "mise a jour redémarrez sécurité ordinateur",
+    lead: "Les mises à jour ne servent pas à changer vos habitudes, mais à réparer des failles de sécurité ou des bugs.",
+    steps: [
+      "Quand une notification vous propose une mise à jour, choisissez un moment où vous n'avez plus besoin de votre ordinateur.",
+      "Branchez votre ordinateur portable sur secteur pour éviter une panne de batterie pendant l'opération.",
+      "Cliquez sur « Mettre à jour et redémarrer » puis laissez l'écran travailler sans l'éteindre de force.",
+      "Une fois l'opération terminée, votre ordinateur redémarre automatiquement ."
+    ],
+    tip: "Ne repoussez pas une mise à jour pendant plusieurs semaines, car votre ordinateur finirait par ralentir ou devenir vulnérable aux virus."
+  },
+    {
+    id: "rendez-vous-en-ligne",
+    category: "Au quotidien",
+    title: "Prendre un rendez-vous en ligne sans se tromper",
+    description: "Trouver un créneau disponible sur la bonne plateforme et recevoir un rappel.",
+    icon: "📅",
+    duration: "6 min",
+    keywords: "rendez-vous en ligne créneau plateforme rappel calendrier",
+    lead: "Prendre rendez-vous sur internet permet de voir toutes les disponibilités d'un coup d'oeil, même le soir ou le week-end.",
+    steps: [
+      "Ouvrez une plateforme reconnue comme officielle pour le service que vous cherchez.",
+      "Indiquez votre ville et le type de rendez-vous que vous souhaitez prendre.",
+      "Cliquez sur l'heure qui vous arrange parmi les créneaux disponibles dans le calendrier.",
+      "Connectez-vous ou créez votre compte avec votre numéro de téléphone pour recevoir un SMS de confirmation."
+    ],
+    tip: "Vous recevrez un rappel automatique par SMS la veille du rendez-vous pour ne pas l'oublier"
+  },
+   {
+    id: "gerer-cookies",
+    category: "Sécurité",
+    title: "Comprendre les cookies et savoir quoi cliquer",
+    description: "Ne plus être bloqué par les fenêtres qui demandent votre accord sue chaque site.",
+    icon: "🍪",
+    duration: "3 min",
+    keywords: "cookiers accepter refuser fenêtre publicité données personelles navigation.",
+    lead: "Les cookies sont de petits fichiers qui mémorisent vos préférences, mais certains servent surtout à suivre vos habitudes pour la publicité.",
+    steps: [
+      "Quand une fenêtre s'ouvre à l'arrivée sur un site, ne cliquez pas par automatisme sur « Tout accepter ».",
+      "Repérez le bouton « Continuer sans accepter » ou « Tout refuser », souvent placé dans un coin.",
+      "Si ce bouton n'est pas visible, cliquez sur « Personnaliser » ou « Gérer mes choix  ».",
+      "Validez vos préférences sans cocher les cases liées à la publicité ciblée."
+    ],
+    tip: "Refuser les cookies publicitaires ne vous empêche jamais de lire un article ou d'utiliser un site normalement."
+  },
+  {
+    id: "double-authentification",
+    category: "Sécurité",
+    title: "Activer la double-authentification facilement",
+    description: "Ajouter une deuxième serrure à vos comptes importants grâce à votre téléphone.",
+    icon: "🔒",
+    duration: "5 min",
+    keywords: "double authentifcation 2fa code sms sécurité",
+    lead: "Même si quelqu'un devine votre mot de passe , ce code envoyé sur votre téléphone l'empêchera d'entrer.",
+    steps: [
+      "Allez dans les paramètres de sécurité de votre boite mail ou de votre banque.",
+      "Cherchez l'option appelée « Validation en deux étapes » ou « Double authentification ».",
+      "Choisissez de recevoir le code de sécurité par SMS sur votre numéro de téléphone ou votre adresse mail",
+      "Saisissez le code reçu par SMS ou mail pour confirmer que tout fonctionne bien."
+    ],
+    tip: "Ce code n'est généralement demandé que lorsque vous vous connectez depuis un nouvel appareil."
+  },
   {
     id: "mots-de-passe",
     category: "Sécurité",
