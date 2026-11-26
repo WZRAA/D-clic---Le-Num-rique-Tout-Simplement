@@ -1,4 +1,76 @@
 const guides = [
+     {
+    id: "prendre-rendez-vous-doctolib",
+    category: "Au quotidien",
+    title: "Prendre rendez-vous sur Doctolib",
+    description: "Trouver un médecin, un dentiste ou un laboratoire et réserver un créneau en ligne.",
+    icon: "🩺",
+    duration: "5 min",
+    keywords: "doctolib rendez-vous médecin dentiste spécialiste santé créneau réservation en ligne.",
+    lead: "Doctolib permet de voir en temps réel les disponibilités des professionnels de santé autour de chez vous",
+    steps: [
+      "Allez sur le site doctolib.fr ou ouvrez l'application et tapez le nom du praticien ou la spécialité recherchée dans la première case.",
+      "Indiquez votre ville ou votre code postal dans la deuxième case puis cliquez sur « Rechercher ».",
+      "Parcourez les résultats, choisissez le praticien qui vous convient et cliquez sur « Prendre rendez-vous ».",
+      "Sélectionnez le motif de la consultation et choisissez un créneau disponible dans le calendrier.",
+      "Renseignez vos informations personnelles et validez le rendez-vous.",
+    ],
+    tip: "En cas d'empêchement, vous pouvez déplacer ou annuler votre rendez-vous en un clic depuis votre compte Doctolib dans la rubrique  « Mes rendez-vous »."
+  },
+   {
+    id: "activer-mon-espace-santé",
+    category: "Au quotidien",
+    title: "Activer et utiliser Mon espace santé",
+    description: "Retrouver ses ordonnances, résultats d'analyses et vaccins dans un carnet de santé numérique.",
+    icon: "🏥",
+    duration: "6 min",
+    keywords: "mon espace sante ameli carte vitale ordonnance vaccin carnet santé",
+    lead: "Mon espace santé est un carnet de santé numérique gratuit proposé par l'Assurance Maladie.",
+    steps: [
+      "Munissez vous de votre carte vitale et rendez-vous sur le site officiel monespacesanté.fr.",
+      "Cliquez sur « Activer mon espace santé ».",
+      "Renseignez votre date de naissance , votre numéro de sécurité sociale (15 chiffres) et le numéro de série de votre carte vitale.",
+      "Saisissez le code provisoire reçu par email ou par SMS pour confirmer votre identité.",
+      "Choisissez un identifiant et un mot de passe sécurisé pour vous connecter à votre espace santé.",
+      "Une fois connecté, vous pouvez consulter vos documents de santé, gérer vos autorisations et partager vos informations avec les professionnels de santé."
+    ],
+    tip: "Vous pouvez ensuite vous connecter facilement avec le bouton FranceConnect ou télécharger l'application mobile sur votre téléphone."
+  },
+  {
+    id: "copier-coller-facilement",
+    category: "Outils",
+    title: "Copier et coller un texte ou un lien sans erreur",
+    description: "Recopier une adresse web, un mot de passe ou un texte sans se tromper.",
+    icon: "📋",
+    duration: "3 min",
+    keywords: "copier coller texte lien adresse web mot de passe",
+    lead: "Le copier-coller permet de dupliquer n'importe quel texte ou lien internet pour le placer ailleurs sans risque de faute de frappe.",
+    steps: [
+      "Placez votre curseur au début du texte à copier, maintenez le clic gauche enfoncé et glissez jusqu'à la fin du texte.",
+      "Relâchez le clic : le texte est surligné en bleu.",
+      "Faites un clic droit sur le texte surligné et choisissez « Copier » dans le menu qui s'affiche.",
+      "Allez à l'endoit ou vous voulez coller le texte (dans un mail, un document ou un moteur de recherche).",
+      "Faites un clic droit à cet endroit et choisissez « Coller » dans le menu qui s'affiche."
+    ],
+    tip: "Le texte copié reste en mémoire jusqu'à ce que vous copiez autre chose."
+  },
+  {
+    id: "nettoyer-onglets-navigateur",
+    category: "Outils",
+    title: "Fermer les onglets inutiles et garder ces favoris",
+    description: "Désencombrer son écran internet et retrouver ses sites préférés en un clic.",
+    icon: "📑",
+    duration: "3 min",
+    keywords: "onglet favoris navigateur chrome edge firefox safari",
+    lead: "Garder des dizaines de pages ouvertes en même temps peut ralentir votre appareil et rend la navigation confuse",
+    steps: [
+      "Regardez tout en haut de votre navigateur : chaque petit rectangle correspond à une page ouverte (un onglet),",
+      "Cliquez sur la petite croix « x » à droite de chaque onglet dont vous n'avez plus besoin pour le fermer",
+      "Pour garder une page importante sans la laisser ouverte, cliquez sur la petite étoile à droite de la barre d'adresse.",
+      "Donner un nom simple à ce favori : il restera accessible à tout moment dans votre barre de favoris."
+    ],
+    tip: "Si vous fermez un onglet par erreur, vous pouvez le rouvrir en cliquant sur le menu du navigateur puis sur « Historique » ou « Récemment fermés »."
+  },
     {
     id: "utiliser-franceconnect",
     category: "Au quotidien",
